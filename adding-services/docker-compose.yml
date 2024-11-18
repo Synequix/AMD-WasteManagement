@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  items-services:
+    build: items-service
+    ports:
+      - "8000:8000"
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
